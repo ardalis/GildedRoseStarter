@@ -17,6 +17,7 @@ namespace GildedRoseKata
 
             };
             var gildedRose = new GildedRose(items);
+            gildedRose.UpdateQuality();
             Assert.Equal(80, items.First().Quality);
         }
     }
