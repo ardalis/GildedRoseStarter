@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <ApplicationIcon />
+
+    <OutputType>Exe</OutputType>
+
+    <StartupObject>GildedRoseKata.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+    <PackageReference Include="Shouldly" Version="4.0.3" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CharacterizationTest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CharacterizationTest.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>
