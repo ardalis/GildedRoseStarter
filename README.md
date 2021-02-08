@@ -6,6 +6,10 @@ A starting point for the Gilded Rose kata using dotnet core, C#, and xunit.
 
 If you like or are using this project to learn, please give it a star. Thanks!
 
+## Watch online
+
+If you'd like to see how I complete this kata, I use it to demonstrate several refactoring techniques in my [Pluralsight Refactoring Fundamentals course](https://www.pluralsight.com/courses/refactoring-fundamentals).
+
 # More Katas
 
 https://github.com/ardalis/kata-catalog
