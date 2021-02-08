@@ -2,6 +2,10 @@
 
 A starting point for the Gilded Rose kata using dotnet core, C#, and xunit.
 
+## Give a Star! :star:
+
+If you like or are using this project to learn, please give it a star. Thanks!
+
 # More Katas
 
 https://github.com/ardalis/kata-catalog
