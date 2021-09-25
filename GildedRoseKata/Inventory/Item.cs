@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Xunit;
-
-namespace GildedRoseKata
+﻿namespace GildedRoseKata.Inventory
 {
     public class Item
     {

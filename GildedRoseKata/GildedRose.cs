@@ -1,24 +1,22 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using GildedRoseKata.Inventory;
 
 namespace GildedRoseKata
 {
     public class GildedRose
     {
-        private readonly IList<Item> _items;
+        IList<Item> Items;
+        public IEnumerable<Item> Inventory => Items;
 
         public GildedRose(IList<Item> items)
         {
-            _items = items;
+            Items = items;
         }
 
         public void UpdateQuality()
         {
-            foreach (var item in _items)
-            {
-                item.AdjustQuality()
-                    .ConstrainQuality()
-                    .DecrementSellIn();
-            }
+            Items = Items.Select(item => item.Update()).ToList();
         }
     }
 }
